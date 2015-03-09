@@ -1,0 +1,30 @@
+.item {
+  background-color: #2C2C2C;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; 
+}
+    
+#state1 {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+}
+    
+#state2 {
+  position: absolute;
+  left: 250px;
+  top: 100px;
+}
+    
+#state3 {
+  position: absolute;
+  left: 100px;
+  top: 250px;
+}
+
+#state4 {
+  position: absolute;
+  left: 250px;
+  top: 250px;
+}

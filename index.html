@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <head>
+    <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery.jsPlumb-1.7.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>Plumbing</title>
+  </head>  
+
+  <body>
+    <div id="state1" class="item"></div>
+    <div id="state2" class="item"></div>
+    <div id="state3" class="item"></div>
+    <div id="state4" class="item"></div>
+    <script type="text/javascript">
+    jsPlumb.ready(function() {
+      jsPlumb.makeSource($('.item'), {
+      connector: 'StateMachine'
+      });
+      jsPlumb.makeTarget($('.item'), {
+      anchor: 'Continuous'
+      });
+    }); 
+  </script>
+  </body>
+</html>
